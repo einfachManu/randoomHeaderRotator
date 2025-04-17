@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Random Header Rotator MV3",
+    "version": "1.1",
+    "description": "Rotiert Header per Zufall pro Seitenaufruf",
+    "permissions": [
+      "declarativeNetRequest",
+      "webNavigation"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "declarative_net_request": {
+      "rule_resources": [{
+        "id": "dynamic_header_rules",
+        "enabled": true,
+        "path": "rules.json"
+      }]
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
