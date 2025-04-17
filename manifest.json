@@ -1,3 +1,4 @@
+
 {
     "manifest_version": 3,
     "name": "Random Header Rotator MV3",
@@ -13,7 +14,7 @@
     "declarative_net_request": {
       "rule_resources": [{
         "id": "dynamic_header_rules",
-        "enabled": true,
+        "enabled": true, 
         "path": "rules.json"
       }]
     },
